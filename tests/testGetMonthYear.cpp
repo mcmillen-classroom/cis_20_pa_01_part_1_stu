@@ -1,9 +1,11 @@
 #include "../src/getMonthYear.c"
 #include <gtest/gtest.h>
 
-TEST(MonthYear, WriteYourDescriptionHere)
+TEST(MonthYear, Jan2019)
 {
-
+    char buffer[1024];
+    getMonthYear(buffer, 1, 2019);
+    ASSERT_STREQ(buffer, "January 2019");
 }
 
 // TODO: write more tests

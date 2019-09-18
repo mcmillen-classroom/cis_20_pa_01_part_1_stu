@@ -3,5 +3,6 @@
 
 void getMonthYear(char *buffer, int mon, int year)
 {
-    // TODO
+    // TODO: complete this function
+    sprintf(buffer, "January 2019\n");
 }
